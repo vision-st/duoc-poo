@@ -13,9 +13,9 @@ duoc-poo/
 ├── Semana1/
 │   └── proyecto-carrito-completo/
 ├── Semana2/
-│   └── proyecto-banco-bbk/
+│   └── indeterminado/
 ├── Semana3/
-│   └── ejemplos-herencia-polimorfismo/
+│   └── indeterminado/
 ```
 
 ---
@@ -44,8 +44,8 @@ duoc-poo/
 | Semana | Proyecto Principal              | Tema central                        |
 |--------|----------------------------------|--------------------------------------|
 | 1      | Carrito de Completos             | Clases, objetos, encapsulamiento     |
-| 2      | Banco BBK                        | Constructores, operaciones, validación |
-| 3      | Ejercicios Herencia y Polimorfismo | Reutilización y flexibilidad         |
+| 2      | Indeterminado                    | Constructores, operaciones, validación |
+| 3      | Indeterminado                    | Reutilización y flexibilidad         |
 
 ---
 
