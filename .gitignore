@@ -1,0 +1,19 @@
+# Archivos de NetBeans
+nbproject/private/
+build/
+dist/
+
+# Archivos de VS Code
+.vscode/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Compilados de Java
+*.class
+
+# Archivos temporales
+*.log
+*.tmp
+*.bak
