@@ -3,6 +3,11 @@ nbproject/private/
 build/
 dist/
 
+# Archivos de IntelliJ IDEA
+.idea/
+*.iml
+out/
+
 # Archivos de VS Code
 .vscode/
 
