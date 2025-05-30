@@ -13,7 +13,7 @@ duoc-poo/
 ├── Semana1/
 │   └── proyecto-carrito-completo/
 ├── Semana2/
-│   └── indeterminado/
+│   └── proyecto-arena-robot
 ├── Semana3/
 │   └── indeterminado/
 ```
@@ -42,10 +42,10 @@ duoc-poo/
 ## 📅 Cronograma (por semanas)
 
 | Semana | Proyecto Principal              | Tema central                        |
-|--------|----------------------------------|--------------------------------------|
-| 1      | Carrito de Completos             | Clases, objetos, encapsulamiento     |
-| 2      | Indeterminado                    | Constructores, operaciones, validación |
-| 3      | Indeterminado                    | Reutilización y flexibilidad         |
+|--------|----------------------------------|---------------------------------------------------|
+| 1      | Carrito de Completos             | Clases, objetos, encapsulamiento                  |
+| 2      | Proyecto arena robot             | Herencia, polimorfismo, interfaces, constructores |
+| 3      | Indeterminado                    | Reutilización y flexibilidad                      |
 
 ---
 
