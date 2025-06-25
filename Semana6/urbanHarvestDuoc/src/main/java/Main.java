@@ -4,8 +4,11 @@ import servicios.*;
 import java.util.*;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws UsuarioExistenteException {
         Scanner scanner = new Scanner(System.in);
+        UsuarioService usuarioService = new UsuarioService();
+        Set<Actividad> actividad = new HashSet<>();
+        ArrayList<Cultivo> cultivos = CultivoService.cargarCultivosDesdeCsv("data/cultivos.csv");
 
         boolean salir = false;
         while (!salir) {
@@ -22,25 +25,41 @@ public class Main {
 
             switch (opcion) {
                 case "1":
-                    System.out.println("Opción no válida.");
+                    for(Cultivo cultivo : cultivos){
+                        System.out.println(" - " + cultivo);
+                    }
                     break;
                 case "2":
-                    System.out.println("Opción no válida.");
+                    System.out.print("Ingrese el nombre del usuario: ");
+                    String nombre = scanner.nextLine();
+                    System.out.print("Ingrese el correo: ");
+                    String correo = scanner.nextLine();
+                    System.out.println("Ingrese el rol del usuario (1. Administrador, 2. Usuario): ");
+                    String rol = scanner.nextLine();
+                    usuarioService.agregarUsuario(new Usuario(nombre, correo, rol));
+                    System.out.println("Usuario agregado exitosamente");
                     break;
                 case "3":
-                    System.out.println("Opción no válida.");
+                    usuarioService.mostrarUsuarios();
                     break;
                 case "4":
-                    System.out.println("Opción no válida.");
+                    System.out.print("Ingrese el nombre del actividad: ");
+                    String nombreActividad = scanner.nextLine();
+                    System.out.print("Ingrese la fecha: ");
+                    String fecha = scanner.nextLine();
+                    actividad.add(new Actividad(nombreActividad, fecha));
+                    System.out.println("Actividad agregado exitosamente");
                     break;
                 case "5":
-                    System.out.println("Opción no válida.");
+                    ArchivoService.guardarUsuarios(usuarioService.getUsuarios(), "data/usuarios.txt");
+                    System.out.println("Usuarios guardado exitosamente");
                     break;
                 case "6":
-                    System.out.println("Opción no válida.");
+                    ArchivoService.guardarActividades(actividad, "data/actividades.txt");
+                    System.out.println("Actividades guardadas.");
                     break;
                 case "0":
-                    System.out.println("Opción no válida.");
+                    salir = true;
                     break;
                 default:
                     System.out.println("Opción no válida.");
