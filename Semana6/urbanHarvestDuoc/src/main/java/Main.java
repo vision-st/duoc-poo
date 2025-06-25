@@ -8,7 +8,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         UsuarioService usuarioService = new UsuarioService();
         Set<Actividad> actividad = new HashSet<>();
-        ArrayList<Cultivo> cultivos = CultivoService.cargarCultivosDesdeCsv("data/cultivos.csv");
+        ArrayList<Cultivo> cultivos = CultivoService.cargarCultivosDesdeCsv("cultivos.csv");
 
         boolean salir = false;
         while (!salir) {
