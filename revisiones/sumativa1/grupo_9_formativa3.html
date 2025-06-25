@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación Formativa - Grupo 9</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e6f0fa;
+      color: #003865;
+      padding: 2em;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #003865;
+    }
+    .highlight {
+      background-color: #ffffff;
+      border-left: 5px solid #005baa;
+      padding: 1.5em;
+      margin-bottom: 2em;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+    }
+    footer {
+      margin-top: 3em;
+      text-align: center;
+      font-size: 0.85em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Evaluación Formativa - Semana 4</h1>
+  <h2>Actividad: Manejando excepciones Try/Catch</h2>
+  <h3>Estudiante: Saúl Arodi Gatica Peña (Grupo 9)</h3>
+
+  <div class="highlight">
+    <h2>Retroalimentación general</h2>
+    <p>Estimado Saúl:</p>
+    <p>Tu trabajo presenta una solución funcional integrada en una única clase, lo que si bien puede resultar práctico para sistemas pequeños, limita la escalabilidad y claridad del código. El uso de excepciones está presente, y se observa manejo adecuado con <code>try/catch</code> en operaciones como búsqueda y préstamo de libros. Has aplicado validaciones básicas que permiten mantener el flujo de la aplicación sin interrupciones.</p>
+
+    <p>La interfaz por consola está bien implementada para las opciones disponibles. Las operaciones de búsqueda, préstamo y listado funcionan correctamente, y se nota un esfuerzo por mantener el orden en el código. Sin embargo, toda la lógica está contenida en una sola clase, lo que va en contra de los principios de diseño modular y separación de responsabilidades. Sería ideal dividir el código en al menos tres clases: una para el modelo (Libro), una para el servicio (Biblioteca) y una para la interfaz (Menú).</p>
+
+    <p>También sería valioso implementar clases de excepción personalizadas, como <code>LibroNoEncontradoException</code> o <code>LibroYaPrestadoException</code>, para capturar errores del dominio de forma específica. Aun así, el trabajo cumple con los elementos mínimos exigidos, y permite evaluar que comprendes el objetivo de manejar errores sin romper el flujo del programa.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Up – ¿Dónde debe llegar el estudiante?</h2>
+    <p>La meta de esta actividad es que el estudiante sea capaz de diseñar un sistema orientado a objetos que modele una biblioteca, utilizando colecciones dinámicas, excepciones personalizadas y bloques <code>try/catch</code> que permitan anticipar y controlar errores del dominio sin interrumpir el flujo del sistema.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Back – ¿Cómo se está desempeñando?</h2>
+    <p>Tu proyecto es funcional y demuestra que comprendes cómo manejar errores y organizar flujos mediante un menú interactivo. Utilizas correctamente validaciones y estructuras básicas de control. Sin embargo, la falta de modularización limita la escalabilidad del sistema. El trabajo no incorpora excepciones personalizadas, lo que reduce la precisión en la captura de errores del dominio. La lógica general es clara, pero centralizada.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Forward – ¿Cómo debe seguir?</h2>
+    <p>Te recomiendo separar tu sistema en al menos tres clases: una para representar libros, otra para contener la lógica de la biblioteca (gestión de préstamos, búsquedas, etc.), y una tercera que actúe como interfaz. Además, implementa tus propias excepciones para representar errores típicos como préstamo duplicado o libro inexistente. Esto mejorará la claridad y te permitirá aplicar lo aprendido en sistemas más complejos como reservas o gestión de usuarios.</p>
+  </div>
+
+  <footer>
+    Instituto Profesional Duoc UC - Evaluación Formativa Semana 1 - Revisión: El profe jorge
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Evaluación Formativa - Grupo 18</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6f0fa;
+      color: #003865;
+      margin: 40px;
+    }
+    header {
+      text-align: center;
+    }
+    h1, h2, h3 {
+      color: #005baa;
+    }
+    .destacado {
+      background-color: #dbe9f5;
+      border-left: 6px solid #005baa;
+      padding: 15px;
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+    th, td {
+      border: 1px solid #005baa;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #005baa;
+      color: white;
+    }
+    .retroalimentacion h3 {
+      color: #005baa;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Evaluación Formativa - Semana 2</h1>
+    <h2>Actividad: Utilizando Herencia y Polimorfismo</h2>
+    <h3>Grupo 18 - JKARLA SANTIBANEZ GUTIERREZ y KEVIN CRISTOFER CARRASCO VICENCIO</h3>
+  </header>
+
+  <div class="destacado">
+    El trabajo del grupo demuestra un dominio sólido de los conceptos esenciales de la Programación Orientada a Objetos. La estructura del código es clara y bien dividida: <code>Cuenta</code> funciona como clase abstracta, mientras que <code>CuentaCorriente</code>, <code>CuentaAhorro</code> y <code>CuentaCredito</code> heredan correctamente y personalizan su comportamiento. El uso de la interfaz <code>InformacionCliente</code> para estandarizar la visualización de datos muestra una buena comprensión del polimorfismo.<br><br>
+    El código de interacción en <code>BankBostonApp</code> y <code>Main</code> es funcional, aunque algo extenso en algunas secciones. Sería ideal centralizar la lógica repetida (como validaciones o impresión de menús) para mejorar legibilidad. También se destaca el uso de constructores sobrecargados que permiten crear cuentas con o sin saldo inicial.<br><br>
+    En general, la implementación es robusta, modular y con buen uso de los principios solicitados.
+  </div>
+
+  <table>
+    <tr>
+      <th>Criterios</th><th>CL</th><th>L</th><th>ML</th><th>LI</th><th>NL</th><th>Observaciones</th>
+    </tr>
+    <tr>
+      <td>1. Clase abstracta con al menos dos atributos</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td><code>Cuenta</code> tiene los atributos <code>numeroCuenta</code> y <code>saldo</code>, bien encapsulados y usados correctamente.</td>
+    </tr>
+    <tr>
+      <td>2. Tres subclases que heredan de la clase base</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td>Cada clase (<code>CuentaCorriente</code>, <code>CuentaAhorro</code>, <code>CuentaCredito</code>) representa correctamente su tipo.</td>
+    </tr>
+    <tr>
+      <td>3. Aplica una interfaz que define un método</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td><code>InformacionCliente</code> permite aplicar un mismo método en diferentes clases, cumpliendo el objetivo del polimorfismo.</td>
+    </tr>
+    <tr>
+      <td>4. Realiza la sobreescritura de un método abstracto</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td>Cada subclase implementa sus versiones específicas del método heredado, utilizando <code>System.out.println</code> para entregar la información.</td>
+    </tr>
+    <tr>
+      <td>5. Aplica sobrecarga de métodos en la clase abstracta</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td>Se observa uso de sobrecarga de constructores en <code>Cuenta</code> para manejar distintos escenarios de inicialización.</td>
+    </tr>
+  </table>
+
+  <div class="retroalimentacion">
+    <h3>Feed Up</h3>
+    <p>El objetivo de esta actividad es aplicar herencia, abstracción, polimorfismo, sobrecarga, sobreescritura e interfaces en un sistema concreto. El foco está en estructurar el código de manera reutilizable, legible y extensible.</p>
+
+    <h3>Feed Back</h3>
+    <p>El grupo presenta una solución bien lograda, con separación de responsabilidades, claridad en el flujo y aplicación efectiva de los principios de la POO. El sistema tiene potencial para crecer, aunque podría beneficiarse de una mejor división del código de lógica y presentación.</p>
+
+    <h3>Feed Forward</h3>
+    <p>Continúen experimentando con la modularización: intenten separar las operaciones bancarias en clases de servicio o controlador. Esto no solo mejora la legibilidad, sino también la capacidad de hacer pruebas y mantenimiento a futuro. El libro "El Programador Pragmático" ofrece buenos consejos sobre refactorización progresiva.</p>
+  </div>
+
+  <footer>
+    Instituto Profesional Duoc UC - Evaluación Formativa Semana 2 - Revisión: El profe jorge
+  </footer>
+</body>
+</html>

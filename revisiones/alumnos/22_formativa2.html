@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Evaluación Formativa - Grupo 22</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f0fa;
+            color: #003865;
+            margin: 40px;
+        }
+        h1, h2 {
+            color: #005baa;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #005baa;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #005baa;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .destacado {
+            background-color: #d0e4f7;
+            border-left: 5px solid #003865;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            text-align: center;
+            color: #555;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Evaluación Formativa - Semana 2</h1>
+<h2>Nombre del estudiante: SEBASTIAN ANDRES BUGUEÑO GOMEZ</h2>
+<h3>Actividad: Actividad Formativa 2 - Utilizando Herencia y Polimorfismo</h3>
+
+<div class="destacado">
+    <strong>Retroalimentación general:</strong><br/>
+    Sebastián, se aprecia un esfuerzo genuino en estructurar correctamente el sistema bancario, haciendo uso de herencia, sobrecarga y el concepto de abstracción. Hay claridad en el uso de clases como `CuentaBancaria` y en cómo extiendes esa lógica en subclases como `CuentaCorriente`. También es destacable el uso de sobrecarga en métodos como `depositar`. Sin embargo, sería beneficioso trabajar en separar responsabilidades (por ejemplo, separar la lógica de interfaz desde el modelo). También podrías considerar un mejor manejo de errores y validaciones para robustecer la experiencia del usuario. 
+</div>
+
+<table>
+    <tr>
+        <th>Criterios</th>
+        <th>CL</th>
+        <th>L</th>
+        <th>ML</th>
+        <th>LI</th>
+        <th>NL</th>
+        <th>Observaciones</th>
+    </tr>
+    <tr>
+        <td>1. Crea una clase abstracta con al menos dos atributos, para dar solución a los requerimientos del caso planteado.</td>
+        <td>✔</td><td></td><td></td><td></td><td></td>
+        <td>Se crea `CuentaBancaria` con atributos `numeroCuenta` y `saldo`. Cumple claramente con el objetivo.</td>
+    </tr>
+    <tr>
+        <td>2. Crea tres subclases que heredan de la clase base, proporcionando implementaciones específicas según el tipo de subclase.</td>
+        <td>✔</td><td></td><td></td><td></td><td></td>
+        <td>Las subclases `CuentaCorriente`, `CuentaAhorro` y `CuentaCredito` heredan adecuadamente.</td>
+    </tr>
+    <tr>
+        <td>3. Aplica una interfaz que define un método.</td>
+        <td>✔</td><td></td><td></td><td></td><td></td>
+        <td>Se define una interfaz funcional (`Mostrable`) correctamente implementada.</td>
+    </tr>
+    <tr>
+        <td>4. Realiza la sobreescritura de la clase abstracta, declarando un método abstracto que es sobreescrito por cada subclase.</td>
+        <td>✔</td><td></td><td></td><td></td><td></td>
+        <td>Métodos como `consultarSaldo()` y `mostrarDatosCuenta()` son sobreescritos en las subclases.</td>
+    </tr>
+    <tr>
+        <td>5. Aplica sobrecarga de métodos en la clase abstracta, teniendo varios constructores con diferentes parámetros para permitir la creación de subclases de diferentes maneras.</td>
+        <td>✔</td><td></td><td></td><td></td><td></td>
+        <td>Se observan constructores sobrecargados en la clase `Persona` y métodos como `depositar`.</td>
+    </tr>
+</table>
+
+<h3>Feed Up – ¿Dónde debe llegar el estudiante?</h3>
+<p>El objetivo de esta actividad es aplicar los conceptos de herencia, interfaces, sobreescritura y sobrecarga para modelar un sistema bancario funcional y flexible. La clase abstracta debía representar una cuenta general, y cada subclase debía personalizar el comportamiento.</p>
+
+<h3>Feed Back – ¿Cómo se está desempeñando?</h3>
+<p>El desempeño ha sido positivo. Se cumplen todos los criterios de la pauta y el código está organizado. El uso de herencia es correcto, se aprecia comprensión del polimorfismo y una implementación funcional del flujo de un sistema bancario. Aún hay oportunidades de mejora en modularización y separación de capas.</p>
+
+<h3>Feed Forward – ¿Cómo debe seguir?</h3>
+<p>Para futuras actividades, considera aplicar el mismo enfoque en otros dominios como librerías, zoológicos o escuelas. Intenta separar la lógica de entrada/salida (`Scanner`, `System.out`) del modelo para facilitar la reutilización del código. Un paso valioso sería leer el libro <i>El Programador Pragmático</i> para incorporar mejores prácticas de diseño.</p>
+
+<footer>
+Instituto Profesional Duoc UC - Evaluación Formativa Semana 2 - Revisión: El profe jorge
+</footer>
+
+</body>
+</html>

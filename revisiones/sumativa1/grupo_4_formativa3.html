@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación Formativa - Grupo 4</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e6f0fa;
+      color: #003865;
+      padding: 2em;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #003865;
+    }
+    .highlight {
+      background-color: #ffffff;
+      border-left: 5px solid #005baa;
+      padding: 1.5em;
+      margin-bottom: 2em;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+    }
+    footer {
+      margin-top: 3em;
+      text-align: center;
+      font-size: 0.85em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Evaluación Formativa - Semana 4</h1>
+  <h2>Actividad: Manejando excepciones Try/Catch</h2>
+  <h3>Estudiante: Lucas Agustín Silva Adasme (Grupo 4)</h3>
+
+  <div class="highlight">
+    <h2>Retroalimentación general</h2>
+    <p>Estimado Lucas:</p>
+    <p>Tu proyecto presenta una implementación funcional, ordenada y bien pensada. Has organizado correctamente las clases <code>Libro</code> y <code>Usuario</code> como entidades del dominio, y utilizas <code>SistemaBiblioteca</code> y <code>Principal</code> para manejar el flujo del programa y la lógica de interacción con el usuario.</p>
+
+    <p>El uso de excepciones personalizadas como <code>LibroNoEncontradoException</code> y <code>LibroYaPrestadoException</code> es acertado y pertinente para cubrir errores esperables dentro del sistema. Estas excepciones son correctamente capturadas mediante bloques <code>try/catch</code>, evitando que el programa se detenga inesperadamente y mejorando la experiencia del usuario.</p>
+
+    <p>Has incluido también una clase utilitaria <code>ArchivoUtil</code> que sugiere intención de persistencia, lo cual aporta modularidad. Como sugerencia, podrías encapsular aún más las operaciones que combinan entrada, validación y ejecución, dividiendo esas tareas en métodos más pequeños para mejorar la legibilidad y escalabilidad del sistema. También te recomiendo documentar más tu código para facilitar su revisión y mantenimiento.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Up – ¿Dónde debe llegar el estudiante?</h2>
+    <p>Esta actividad busca que el estudiante diseñe un sistema que maneje errores típicos mediante excepciones personalizadas, aplicando estructuras dinámicas como <code>ArrayList</code> y organizando el código de manera modular. El flujo del programa debe estar protegido con bloques <code>try/catch</code> que entreguen mensajes claros y útiles para el usuario.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Back – ¿Cómo se está desempeñando?</h2>
+    <p>Tu desempeño ha sido muy bueno. El sistema es funcional, las clases están bien estructuradas, y las excepciones están correctamente aplicadas y gestionadas. Además, la presencia de una clase de utilidad para archivos demuestra un enfoque modular. Hay espacio de mejora en la separación de responsabilidades dentro de algunos métodos y en la documentación general del sistema.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Forward – ¿Cómo debe seguir?</h2>
+    <p>Como siguiente paso, podrías aplicar este mismo modelo en sistemas como agendas, inventarios o reservas. Además, te recomiendo crear una clase dedicada exclusivamente al menú o la interacción con el usuario, dejando la lógica de negocio encapsulada en el sistema central. Esto te permitirá adaptar tu sistema a nuevas interfaces sin tener que reescribir la lógica de fondo.</p>
+  </div>
+
+  <footer>
+    Instituto Profesional Duoc UC - Evaluación Formativa Semana 1 - Revisión: El profe jorge
+  </footer>
+
+</body>
+</html>

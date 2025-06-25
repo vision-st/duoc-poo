@@ -22,3 +22,5 @@ Thumbs.db
 *.log
 *.tmp
 *.bak
+/Semana1/proyecto-carrito-completo/BancoBoston/nbproject/private/
+/Semana1/proyecto-carrito-completo/BancoOfBostonDemostracion/nbproject/private/

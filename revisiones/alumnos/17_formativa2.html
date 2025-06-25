@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Evaluación Formativa - Grupo 17</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6f0fa;
+      color: #003865;
+      margin: 40px;
+    }
+    header {
+      text-align: center;
+    }
+    h1, h2, h3 {
+      color: #005baa;
+    }
+    .destacado {
+      background-color: #dbe9f5;
+      border-left: 6px solid #005baa;
+      padding: 15px;
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+    th, td {
+      border: 1px solid #005baa;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #005baa;
+      color: white;
+    }
+    .retroalimentacion h3 {
+      color: #005baa;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Evaluación Formativa - Semana 2</h1>
+    <h2>Actividad: Utilizando Herencia y Polimorfismo</h2>
+    <h3>Grupo 17 - JEAN ARANCIBIA CHICAHUAL</h3>
+  </header>
+
+  <div class="destacado">
+    El trabajo presentado refleja una estructura clara basada en los principios de la POO. Se nota el esfuerzo por modelar distintos tipos de clientes mediante herencia, diferenciando <code>ClienteNormal</code>, <code>ClienteEmpresa</code> y <code>ClienteInternacional</code> como subclases de <code>Persona</code> (abstracta). Esta organización favorece la reutilización de código.<br><br>
+    Además, se implementa correctamente la interfaz <code>OperacionesBancarias</code> en la clase <code>Cuenta</code>, separando la lógica de operaciones desde la entidad cliente. La lógica de interacción con el usuario en consola es clara y efectiva, aunque se puede mejorar la legibilidad y evitar duplicaciones usando métodos auxiliares.<br><br>
+    La sobrecarga de métodos se puede considerar cumplida al tener múltiples constructores en el sistema, aunque no están todos dentro de la clase abstracta. El diseño general es funcional y muestra una muy buena comprensión de los conceptos requeridos.
+  </div>
+
+  <table>
+    <tr>
+      <th>Criterios</th><th>CL</th><th>L</th><th>ML</th><th>LI</th><th>NL</th><th>Observaciones</th>
+    </tr>
+    <tr>
+      <td>1. Clase abstracta con al menos dos atributos</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td>La clase abstracta <code>Persona</code> cumple con los atributos requeridos y permite reutilización en sus subclases.</td>
+    </tr>
+    <tr>
+      <td>2. Tres subclases con implementaciones específicas</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td>Las subclases <code>ClienteNormal</code>, <code>ClienteEmpresa</code> y <code>ClienteInternacional</code> implementan el método <code>mostrarInformacion()</code> de forma diferenciada.</td>
+    </tr>
+    <tr>
+      <td>3. Aplica una interfaz que define un método</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td>La interfaz <code>OperacionesBancarias</code> está bien implementada en <code>Cuenta</code> y se respeta su contrato.</td>
+    </tr>
+    <tr>
+      <td>4. Sobreescritura del método abstracto</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td>Cada subclase de <code>Persona</code> sobrescribe el método abstracto de manera coherente.</td>
+    </tr>
+    <tr>
+      <td>5. Sobrecarga de métodos (constructores)</td>
+      <td></td><td>X</td><td></td><td></td><td></td>
+      <td>No se observa claramente la sobrecarga de constructores en la clase abstracta, aunque se podrían añadir fácilmente.<br>Ejemplo sugerido:<br><code>public Persona(String rut) { this.rut = rut; this.nombre = ""; }</code></td>
+    </tr>
+  </table>
+
+  <div class="retroalimentacion">
+    <h3>Feed Up</h3>
+    <p>Esta actividad busca aplicar herencia, polimorfismo, interfaces, abstracción, sobreescritura y sobrecarga en el contexto de un sistema bancario, desarrollando estructuras lógicas que permitan extensibilidad y reutilización de código.</p>
+
+    <h3>Feed Back</h3>
+    <p>El estudiante demuestra una buena comprensión de los fundamentos de la POO. El sistema es claro, funcional y está bien organizado. Se aprecia la diferencia entre los tipos de clientes y una correcta separación de responsabilidades.</p>
+
+    <h3>Feed Forward</h3>
+    <p>Te invito a probar este diseño en otros dominios como un sistema escolar o de reservas. Además, podrías abstraer la lógica de búsqueda y operaciones en métodos auxiliares o servicios. Revisa ejemplos del libro "El Programador Pragmático" para mejorar tu estilo de codificación.</p>
+  </div>
+
+  <footer>
+    Instituto Profesional Duoc UC - Evaluación Formativa Semana 2 - Revisión: El profe jorge
+  </footer>
+</body>
+</html>

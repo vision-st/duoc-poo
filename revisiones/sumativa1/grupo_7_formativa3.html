@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación Formativa - Grupo 7</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e6f0fa;
+      color: #003865;
+      padding: 2em;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #003865;
+    }
+    .highlight {
+      background-color: #ffffff;
+      border-left: 5px solid #005baa;
+      padding: 1.5em;
+      margin-bottom: 2em;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+    }
+    footer {
+      margin-top: 3em;
+      text-align: center;
+      font-size: 0.85em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Evaluación Formativa - Semana 4</h1>
+  <h2>Actividad: Manejando excepciones Try/Catch</h2>
+  <h3>Estudiante: Lucas Avilés Arias (Grupo 7)</h3>
+
+  <div class="highlight">
+    <h2>Retroalimentación general</h2>
+    <p>Estimado Lucas:</p>
+    <p>Tu trabajo presenta una estructura bien pensada y adaptada al contexto del problema. Las clases <code>Libro</code>, <code>Usuario</code> y <code>Biblioteca</code> están correctamente diseñadas y distribuyen de forma ordenada la lógica del sistema. Se evidencia el uso de clases de excepción personalizadas como <code>LibroNoEncontradoException</code> y <code>LibroYaPrestadoException</code>, lo cual es una buena señal del entendimiento de los requisitos.</p>
+
+    <p>Se aprecia que la clase <code>BibliotecaDUOC</code> funciona como punto de entrada del sistema y que organiza el flujo de interacción, probablemente también de forma directa con el usuario. Es destacable que el código esté limpio y que se aprecie un esfuerzo por estructurar las clases de manera modular.</p>
+
+    <p>Sin embargo, se recomienda separar la lógica de presentación (como la entrada de datos) de la lógica de negocio que reside en <code>Biblioteca</code>. Encapsular validaciones o acciones repetitivas en métodos reutilizables también sería una mejora relevante. Por último, documentar los métodos principales ayudaría a la comprensión de terceros y facilitaría futuras extensiones.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Up – ¿Dónde debe llegar el estudiante?</h2>
+    <p>Esta actividad busca que el estudiante construya una aplicación sólida basada en objetos, con colecciones dinámicas y tratamiento robusto de errores. Las excepciones deben ser personalizadas, lanzadas y capturadas donde corresponde, y se debe evitar el uso de capturas genéricas de <code>Exception</code> para mantener claridad y especificidad en la respuesta del sistema ante fallos.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Back – ¿Cómo se está desempeñando?</h2>
+    <p>Tu sistema cumple correctamente con lo solicitado. La estructura de clases está clara, las excepciones están bien utilizadas y los flujos están protegidos mediante <code>try/catch</code>. El código es funcional, limpio y con buena división de responsabilidades. Se nota una apropiada interpretación del problema y una ejecución técnica correcta. Aún puedes mejorar la organización de métodos y la separación entre control e interacción directa.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Forward – ¿Cómo debe seguir?</h2>
+    <p>Como siguiente paso, puedes crear una clase o capa especial para manejar entrada/salida (por ejemplo, <code>Menu</code> o <code>Consola</code>) que se encargue exclusivamente del diálogo con el usuario. Esto hará tu lógica más reutilizable en otros contextos (por ejemplo, interfaces gráficas o web). También podrías aplicar esta estructura en proyectos de gestión de productos, reservas o usuarios.</p>
+  </div>
+
+  <footer>
+    Instituto Profesional Duoc UC - Evaluación Formativa Semana 1 - Revisión: El profe jorge
+  </footer>
+
+</body>
+</html>

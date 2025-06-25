@@ -1,0 +1,42 @@
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Evaluación Sumativa - Kevin Aguilar</title><style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f0fa;
+    color: #003865;
+    padding: 20px;
+  }
+  h1, h2 {
+    color: #005baa;
+  }
+  .feedback {
+    background-color: #ffffff;
+    border-left: 5px solid #005baa;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  th, td {
+    border: 1px solid #003865;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #005baa;
+    color: white;
+  }
+  tfoot td {
+    font-weight: bold;
+  }
+  footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #003865;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+  }
+</style></head><body><h1>Evaluación Sumativa</h1><h2>Actividad: Estructurando paquetes y directorios con uso de clases</h2><p>Estudiante: Kevin Javier Aguilar Rivas</p><div class="feedback"><h3>Retroalimentación General</h3><p>El objetivo de esta actividad es aplicar lo aprendido en encapsulamiento, herencia, clases abstractas e interfaces. Debes ser capaz de organizar correctamente un proyecto Java mediante paquetes y subpaquetes que respondan a dominios funcionales específicos.</p><p>Se evidencia un conocimiento sólido en la implementación de clases abstractas, subclases, interfaces y métodos sobrescritos. Sin embargo, existen detalles a mejorar en la organización de paquetes, nomenclatura y coherencia estructural entre dominios.</p><p>Para seguir mejorando, te recomiendo aplicar la misma estructura de dominio en otro tipo de sistema (por ejemplo, un sistema de reservas o una biblioteca). Enfócate en crear nombres significativos en paquetes y aplicar coherencia en los submódulos.</p></div><table><tr><th>#</th><th>Criterios</th><th>CL</th><th>L</th><th>ML</th><th>LI</th><th>NL</th><th>Observaciones</th></tr><tr><td>1</td><td>Crea una clase base abstracta que responde a lo solicitado en el caso problema.</td><td>✔️</td><td></td><td></td><td></td><td></td><td>La clase 'CuentaBancaria' está correctamente definida como abstracta, con encapsulamiento adecuado y atributos bien definidos.</td></tr><tr><td>2</td><td>Implementa un constructor en el proyecto para inicializar los atributos del proyecto con eficiencia y precisión.</td><td>✔️</td><td></td><td></td><td></td><td></td><td>Constructor presente en 'CuentaBancaria', inicializa adecuadamente número de cuenta y saldo.</td></tr><tr><td>3</td><td>Declara un método abstracto que represente el cálculo de intereses.</td><td>✔️</td><td></td><td></td><td></td><td></td><td>El método 'calcularInteres' se encuentra correctamente declarado como abstracto en la clase base.</td></tr><tr><td>4</td><td>Implementa subclases en el proyecto.</td><td>✔️</td><td></td><td></td><td></td><td></td><td>Se implementan correctamente las tres subclases con sus respectivos métodos.</td></tr><tr><td>5</td><td>Aplica sobrecarga de métodos en el proyecto.</td><td></td><td>✔️</td><td></td><td></td><td></td><td>Se identifican constructores sobrecargados en 'CuentaBancaria', aunque podrían incluir más variaciones con validaciones.</td></tr><tr><td>6</td><td>Desarrolla una interfaz con método para aquellas clases que requieran mostrar información del cliente.</td><td>✔️</td><td></td><td></td><td></td><td></td><td>La interfaz 'InfoCliente' está bien definida y correctamente implementada por las clases pertinentes.</td></tr><tr><td>7</td><td>Sobrescribe Método en la clase abstracta</td><td>✔️</td><td></td><td></td><td></td><td></td><td>Las subclases sobrescriben el método 'calcularInteres' correctamente, aunque sea con un System.out.println simple.</td></tr><tr><td>8</td><td>Identifica Dominios relevantes para el proyecto.</td><td></td><td>✔️</td><td></td><td></td><td></td><td>Se identifican dos dominios (cuentas y operaciones), aunque podrían justificarse con mayor claridad en nombres de paquetes.</td></tr><tr><td>9</td><td>Crea paquetes y subpaquetes para cada dominio.</td><td></td><td></td><td>✔️</td><td></td><td></td><td>Existen paquetes, pero algunos nombres no reflejan con claridad el dominio específico. Recomendación: usar nombres como `dominio.cliente` y `dominio.cuenta`.</td></tr><tr><td>10</td><td>Organiza Clases en Paquetes</td><td></td><td></td><td>✔️</td><td></td><td></td><td>Varias clases están bien organizadas, pero otras aparecen fuera de su contexto natural. Sugiero reubicar `ListaClientes` junto a `CuentaBancaria` o crear un paquete `gestores`.</td></tr><tr><td>11</td><td>Crea Paquetes Internos</td><td></td><td></td><td></td><td>✔️</td><td></td><td>Solo se observa un intento de paquete interno, sin coherencia estructural clara. Recomendación: agrupar `InfoCliente` y `AccionesCuenta` bajo un subpaquete `interfaces`.</td></tr></table><footer>Instituto Profesional Duoc UC - Evaluación Formativa Semana 1 - Revisión: El profe jorge</footer></body></html>

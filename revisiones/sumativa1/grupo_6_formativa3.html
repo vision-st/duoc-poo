@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación Formativa - Grupo 6</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e6f0fa;
+      color: #003865;
+      padding: 2em;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #003865;
+    }
+    .highlight {
+      background-color: #ffffff;
+      border-left: 5px solid #005baa;
+      padding: 1.5em;
+      margin-bottom: 2em;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+    }
+    footer {
+      margin-top: 3em;
+      text-align: center;
+      font-size: 0.85em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Evaluación Formativa - Semana 4</h1>
+  <h2>Actividad: Manejando excepciones Try/Catch</h2>
+  <h3>Estudiante: Víctor Eduardo Marambio Meléndez (Grupo 6)</h3>
+
+  <div class="highlight">
+    <h2>Retroalimentación general</h2>
+    <p>Estimado Víctor:</p>
+    <p>Tu proyecto presenta una implementación clara y ajustada a los objetivos de la actividad. Has definido correctamente las clases <code>Libro</code>, <code>Usuario</code> y <code>Biblioteca</code>, cada una cumpliendo su rol en el sistema. La clase <code>Main</code> coordina adecuadamente el flujo de ejecución, y se observa un uso correcto de estructuras como <code>ArrayList</code>.</p>
+
+    <p>El uso de excepciones personalizadas como <code>LibroNoEncontradoException</code> y <code>LibroYaPrestadoException</code> está bien aplicado, permitiendo gestionar errores lógicos propios del dominio. Los bloques <code>try/catch</code> están bien ubicados y ayudan a proteger el sistema de interrupciones inesperadas, brindando mensajes informativos al usuario.</p>
+
+    <p>Como sugerencia, podrías encapsular aún más la lógica en métodos dentro de <code>Biblioteca</code>, separando claramente las acciones como préstamo, devolución o búsqueda. Actualmente, algunos bloques de código en <code>Main</code> podrían delegarse a métodos más pequeños y reutilizables. Además, documentar brevemente cada método facilitará el mantenimiento del código en el futuro.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Up – ¿Dónde debe llegar el estudiante?</h2>
+    <p>El objetivo de esta actividad es construir un sistema que maneje errores esperables de forma controlada utilizando excepciones personalizadas y bloques <code>try/catch</code>, aplicando además colecciones como <code>ArrayList</code> y manteniendo una estructura modular y orientada a objetos.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Back – ¿Cómo se está desempeñando?</h2>
+    <p>Tu desempeño ha sido positivo. El sistema es funcional, las clases están bien separadas y aplicas adecuadamente el manejo de excepciones. Se nota una comprensión clara del problema y una implementación sólida. Aun así, podrías mejorar en la limpieza de <code>Main</code> y en la reutilización de lógica común, lo que elevaría aún más la calidad de tu solución.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Forward – ¿Cómo debe seguir?</h2>
+    <p>Como próximo paso, podrías aplicar esta misma lógica en sistemas similares (como reservas o control de inventario) y construir una clase encargada exclusivamente de la entrada y salida de datos. Esto permitirá escalar tu aplicación hacia interfaces gráficas o servicios web en el futuro, sin alterar la lógica interna de <code>Biblioteca</code>.</p>
+  </div>
+
+  <footer>
+    Instituto Profesional Duoc UC - Evaluación Formativa Semana 1 - Revisión: El profe jorge
+  </footer>
+
+</body>
+</html>

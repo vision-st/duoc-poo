@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación Formativa - Grupo 5</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e6f0fa;
+      color: #003865;
+      padding: 2em;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #003865;
+    }
+    .highlight {
+      background-color: #ffffff;
+      border-left: 5px solid #005baa;
+      padding: 1.5em;
+      margin-bottom: 2em;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+    }
+    footer {
+      margin-top: 3em;
+      text-align: center;
+      font-size: 0.85em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Evaluación Formativa - Semana 4</h1>
+  <h2>Actividad: Manejando excepciones Try/Catch</h2>
+  <h3>Estudiantes: Alexandra Rosa Martínez Sánchez y Kevin Javier Aguilar Rivas (Grupo 5)</h3>
+
+  <div class="highlight">
+    <h2>Retroalimentación general</h2>
+    <p>Estimados Alexandra y Kevin:</p>
+    <p>Su proyecto refleja una comprensión clara del problema planteado y una aplicación correcta de los principios de orientación a objetos y manejo de excepciones. Han implementado clases clave como <code>Libro</code>, <code>Usuario</code>, <code>Biblioteca</code> y <code>Menu</code>, manteniendo una estructura ordenada y fácil de seguir.</p>
+
+    <p>Las excepciones personalizadas <code>LibroNoEncontradoException</code> y <code>LibroYaPrestadoException</code> están bien definidas y correctamente utilizadas mediante bloques <code>try/catch</code> que permiten manejar situaciones comunes de error sin detener el flujo del programa. Se valora especialmente la incorporación de una clase <code>Menu</code> que organiza la interacción con el usuario, favoreciendo la separación de responsabilidades.</p>
+
+    <p>Como punto de mejora, se sugiere reducir la repetición de código en algunos métodos del menú. Por ejemplo, podrían encapsular en métodos separados los pasos para solicitar datos de entrada, validar, y ejecutar una acción. Esto permitiría que su sistema escale más fácilmente en el futuro y que sea más mantenible. También sería útil documentar los métodos principales y agregar mensajes más detallados cuando ocurre una excepción, utilizando <code>e.getMessage()</code>.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Up – ¿Dónde debe llegar el estudiante?</h2>
+    <p>El objetivo de esta actividad es desarrollar un sistema modular capaz de manejar situaciones excepcionales mediante el uso de clases de excepción personalizadas, y que utilice colecciones para organizar los datos de una biblioteca. El flujo debe estar protegido con bloques <code>try/catch</code> y entregar retroalimentación clara al usuario sin que el sistema se interrumpa.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Back – ¿Cómo se está desempeñando?</h2>
+    <p>Su desempeño ha sido muy bueno. La lógica está bien estructurada, el uso de excepciones es correcto, y la interacción con el usuario está claramente delegada en una clase aparte. Cumplen con todos los requerimientos y han demostrado criterio técnico para diseñar un sistema robusto y funcional. Aún hay espacio para mejorar en la organización interna de los métodos y en la reutilización de ciertas secciones del código.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Forward – ¿Cómo debe seguir?</h2>
+    <p>Como paso siguiente, podrían aplicar esta misma estructura a otros problemas similares, como una agenda de contactos, un sistema de reservas o una tienda en línea. Separen más la lógica de negocio de la de presentación creando clases intermedias (por ejemplo, un <code>ServicioBiblioteca</code>). También es buena idea mantener un registro de acciones mediante logs o archivos para mejorar la trazabilidad.</p>
+  </div>
+
+  <footer>
+    Instituto Profesional Duoc UC - Evaluación Formativa Semana 1 - Revisión: El profe jorge
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación Formativa - Grupo 3</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e6f0fa;
+      color: #003865;
+      padding: 2em;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #003865;
+    }
+    .highlight {
+      background-color: #ffffff;
+      border-left: 5px solid #005baa;
+      padding: 1.5em;
+      margin-bottom: 2em;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+    }
+    footer {
+      margin-top: 3em;
+      text-align: center;
+      font-size: 0.85em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Evaluación Formativa - Semana 4</h1>
+  <h2>Actividad: Manejando excepciones Try/Catch</h2>
+  <h3>Estudiantes: Ángela Paz Torres Ibañez y Francisco Javier Córdova Durán (Grupo 3)</h3>
+
+  <div class="highlight">
+    <h2>Retroalimentación general</h2>
+    <p>Estimados Ángela y Francisco:</p>
+    <p>El trabajo que han entregado destaca por su enfoque ordenado y el correcto uso de excepciones personalizadas. Han definido clases como <code>LibroNoEncontrado</code>, <code>LibroPrestado</code>, <code>LibroNoPrestado</code> y <code>UsuarioNoEncontrado</code>, lo que indica que han comprendido claramente los posibles escenarios de error dentro del dominio de una biblioteca.</p>
+
+    <p>El sistema se apoya en las clases <code>Biblioteca</code> y <code>Biblioteca_DUOC</code> para concentrar la lógica de negocio. Las clases <code>Libro</code> y <code>Usuario</code> están bien estructuradas y representan adecuadamente a las entidades del sistema. El flujo de ejecución parece estar correctamente distribuido entre estas clases, aunque no se observa una clase de interacción (menú o consola), por lo que se puede inferir que esta fue implementada dentro de <code>Biblioteca_DUOC</code>.</p>
+
+    <p>Se recomienda refactorizar algunos métodos que combinan validaciones, acciones y mensajes, para separarlos en funciones más pequeñas. Esto favorecería la reutilización de código y facilitaría la migración futura hacia otro tipo de interfaz. El uso de nombres coherentes para las excepciones y las clases denota un trabajo consciente en el diseño del sistema.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Up – ¿Dónde debe llegar el estudiante?</h2>
+    <p>El objetivo de esta actividad es construir un sistema funcional que maneje situaciones excepcionales mediante el uso de clases de excepción personalizadas, protegiendo el flujo mediante bloques <code>try/catch</code>. El programa debe aplicar principios de modularidad y orientación a objetos, así como estructuras dinámicas para almacenar y gestionar datos.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Back – ¿Cómo se está desempeñando?</h2>
+    <p>El desempeño ha sido bueno. Se nota un entendimiento claro del propósito de las excepciones personalizadas y su integración en el flujo del programa. Las clases están bien distribuidas y el diseño refleja una arquitectura sencilla pero funcional. Aún se puede mejorar en modularidad y separación de responsabilidades, sobre todo para preparar el sistema ante una eventual evolución futura.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Forward – ¿Cómo debe seguir?</h2>
+    <p>Como paso siguiente, les recomiendo implementar una clase que centralice la interacción con el usuario (como un menú o controlador), de forma que <code>Biblioteca_DUOC</code> solo mantenga la lógica. También pueden aplicar lo aprendido en dominios similares como inventarios, reservas o sistemas de atención, reutilizando la misma lógica de excepciones y validaciones.</p>
+  </div>
+
+  <footer>
+    Instituto Profesional Duoc UC - Evaluación Formativa Semana 1 - Revisión: El profe jorge
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación Formativa - Grupo 22</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e6f0fa;
+      color: #003865;
+      padding: 2em;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #003865;
+    }
+    .highlight {
+      background-color: #ffffff;
+      border-left: 5px solid #005baa;
+      padding: 1.5em;
+      margin-bottom: 2em;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+    }
+    footer {
+      margin-top: 3em;
+      text-align: center;
+      font-size: 0.85em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Evaluación Formativa - Semana 4</h1>
+  <h2>Actividad: Manejando excepciones Try/Catch</h2>
+  <h3>Estudiante: Sebastián Andrés Bugueño Gómez (Grupo 22)</h3>
+
+  <div class="highlight">
+    <h2>Retroalimentación general</h2>
+    <p>Estimado Sebastián:</p>
+    <p>Tu proyecto refleja un dominio correcto de los fundamentos de la programación orientada a objetos. Has implementado una arquitectura sencilla pero efectiva, que incluye clases como <code>Libro</code>, <code>Usuario</code> y una clase <code>Biblioteca</code> que concentra la lógica principal del sistema. Esta estructura permite una buena organización del código y facilita el manejo de colecciones para gestionar los préstamos.</p>
+
+    <p>El manejo de excepciones está bien aplicado. Se aprecia la inclusión de clases personalizadas como <code>LibroNoEncontradoException</code> y <code>LibroYaPrestadoException</code>, y su uso mediante bloques <code>try/catch</code> en puntos clave del programa. Esto contribuye a que el sistema sea más robusto frente a errores esperados durante la ejecución.</p>
+
+    <p>No obstante, se observa una fuerte dependencia de la lógica con la consola. Las validaciones están embebidas directamente en la interacción con el usuario, lo que puede dificultar la escalabilidad del sistema. Se sugiere separar la lógica del dominio (gestión de libros y usuarios) de la presentación para facilitar futuras extensiones, como el uso de interfaces gráficas o servicios web.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Up – ¿Dónde debe llegar el estudiante?</h2>
+    <p>Esta actividad tiene como meta que el estudiante desarrolle un sistema que gestione correctamente errores a través de excepciones personalizadas, asegurando que el flujo del programa no se interrumpa ante situaciones comunes como intentos de préstamo inválido o búsqueda fallida. Además, se espera una estructura modular, clara y orientada a objetos, con el uso adecuado de colecciones dinámicas.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Back – ¿Cómo se está desempeñando?</h2>
+    <p>El desempeño ha sido positivo. Cumples con los elementos esenciales de la actividad: estructura de clases organizada, colecciones bien aplicadas, uso de excepciones personalizadas y flujos protegidos con <code>try/catch</code>. La aplicación es funcional y demuestra que comprendes los principios básicos. Sin embargo, sería ideal mejorar la organización del código separando responsabilidades, y reutilizar más bloques comunes (por ejemplo, validaciones o mensajes de error).</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Forward – ¿Cómo debe seguir?</h2>
+    <p>Te recomiendo aplicar esta misma arquitectura en otro dominio, como gestión de clientes o stock de productos. Además, crea una clase aparte encargada de toda la interacción con el usuario, lo que te permitirá reutilizar tu lógica sin duplicarla y adaptarla a otros tipos de interfaces. Así lograrás un código más limpio, escalable y mantenible a futuro.</p>
+  </div>
+
+  <footer>
+    Instituto Profesional Duoc UC - Evaluación Formativa Semana 1 - Revisión: El profe jorge
+  </footer>
+
+</body>
+</html>

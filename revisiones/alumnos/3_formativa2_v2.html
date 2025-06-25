@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Evaluación Formativa - Grupo 3</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e6f0fa;
+      margin: 40px;
+      color: #003865;
+    }
+    h1 {
+      color: #005baa;
+      border-bottom: 2px solid #003865;
+      padding-bottom: 5px;
+    }
+    .encabezado {
+      margin-bottom: 30px;
+    }
+    .retroalimentacion {
+      background-color: #ffffff;
+      border-left: 6px solid #005baa;
+      padding: 15px 25px;
+      margin-bottom: 30px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 40px;
+    }
+    th, td {
+      border: 1px solid #003865;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #005baa;
+      color: white;
+    }
+    td.observacion {
+      text-align: left;
+    }
+    .bloque-retro {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #555;
+      text-align: center;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="encabezado">
+    <h1>Evaluación Formativa</h1>
+    <p><strong>Estudiantes:</strong> Ángela Paz Torres Ibáñez y Francisco Javier Córdova Durán</p>
+    <p><strong>Actividad:</strong> Actividad Formativa 2: Utilizando Herencia y Polimorfismo</p>
+    <p><strong>Semana:</strong> 2</p>
+  </div>
+
+  <div class="retroalimentacion">
+    <h2>Retroalimentación general</h2>
+    <p>Ángela y Francisco, se nota un esfuerzo importante en la estructuración de clases y uso de herencia. El código presenta un enfoque ordenado, con separación clara entre abstracciones y funcionalidades concretas. 
+    La clase `Cuenta` se declara correctamente como abstracta con atributos esenciales, y las subclases (`CuentaAhorro`, `CuentaCorriente`, `CuentaCredito`) están bien implementadas. 
+    Además, se logra una correcta implementación de polimorfismo mediante la sobrescritura de métodos como `mostrarInformacion()` y `calcularInteres()` (cuando corresponde).
+    </p>
+    <p>Como sugerencia de mejora, podrían estandarizar el uso de comentarios JavaDoc para cada clase y método, así como evitar código duplicado entre subclases (por ejemplo, en métodos `depositar()` y `retirar()` que podrían beneficiarse de una implementación base común). 
+    El manejo de interfaces está correcto pero se puede extender con más utilidad. Buen trabajo en general, sigan reforzando la modularidad y reutilización.</p>
+  </div>
+
+  <table>
+    <tr>
+      <th>Criterios</th><th>CL</th><th>L</th><th>ML</th><th>LI</th><th>NL</th><th>Observaciones</th>
+    </tr>
+    <tr>
+      <td>1. Crea una clase abstracta con al menos dos atributos</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td class="observacion">La clase `Cuenta` cumple con ser abstracta y tener atributos fundamentales como número y saldo. Bien aplicado.</td>
+    </tr>
+    <tr>
+      <td>2. Crea tres subclases que heredan de la clase base</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td class="observacion">Las clases `CuentaAhorro`, `CuentaCorriente` y `CuentaCredito` heredan correctamente y extienden comportamiento. Muy bien.</td>
+    </tr>
+    <tr>
+      <td>3. Aplica una interfaz que define un método</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td class="observacion">La interfaz `InformacionCliente` se usa de forma correcta para estandarizar la información mostrable de clientes.</td>
+    </tr>
+    <tr>
+      <td>4. Realiza la sobreescritura de la clase abstracta</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td class="observacion">Cada subclase implementa su versión específica de métodos como `mostrarInformacion()`. Bien enfocado.</td>
+    </tr>
+    <tr>
+      <td>5. Aplica sobrecarga de métodos en la clase abstracta</td>
+      <td></td><td>X</td><td></td><td></td><td></td>
+      <td class="observacion">No se observaron múltiples constructores en la clase abstracta. Sugerencia: pueden añadir una sobrecarga con parámetros por defecto u opcionales.<br>
+      <code>public Cuenta(String numero) &#123; this(numero, 0); &#125;</code></td>
+    </tr>
+  </table>
+
+  <div class="bloque-retro">
+    <h3>Feed Up – ¿Dónde debe llegar el estudiante?</h3>
+    <p>El objetivo de esta actividad es aplicar correctamente los principios de la herencia, polimorfismo, interfaces y la abstracción, modelando cuentas bancarias mediante estructuras jerárquicas reutilizables.</p>
+  </div>
+
+  <div class="bloque-retro">
+    <h3>Feed Back – ¿Cómo se está desempeñando?</h3>
+    <p>La solución muestra dominio del concepto de herencia y sobrescritura, y hay una buena estructura modular. Se evidencia uso claro de clases y métodos. Sin embargo, hay espacio para mejorar en la reutilización (por ejemplo, mover lógica repetida a la clase base) y en enriquecer la documentación y presentación del código.</p>
+  </div>
+
+  <div class="bloque-retro">
+    <h3>Feed Forward – ¿Cómo debe seguir?</h3>
+    <p>Un buen siguiente paso sería tomar este mismo modelo bancario y aplicarlo a otros dominios como cuentas de videojuegos, suscripciones o usuarios de biblioteca. Practicar la reutilización y la delegación les permitirá mejorar su diseño aún más. También es recomendable estudiar patrones de diseño simples como Template Method o Strategy para organizar variaciones de comportamiento.</p>
+  </div>
+
+  <footer>
+    Instituto Profesional Duoc UC - Evaluación Formativa Semana 2 - Revisión: El profe jorge
+  </footer>
+</body>
+</html>

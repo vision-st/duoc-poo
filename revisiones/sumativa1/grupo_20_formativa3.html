@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación Formativa - Grupo 20</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e6f0fa;
+      color: #003865;
+      padding: 2em;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #003865;
+    }
+    .highlight {
+      background-color: #ffffff;
+      border-left: 5px solid #005baa;
+      padding: 1.5em;
+      margin-bottom: 2em;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+    }
+    footer {
+      margin-top: 3em;
+      text-align: center;
+      font-size: 0.85em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Evaluación Formativa - Semana 4</h1>
+  <h2>Actividad: Manejando excepciones Try/Catch</h2>
+  <h3>Estudiante: Lisbeth Karina Bilbao Merino (Grupo 20)</h3>
+
+  <div class="highlight">
+    <h2>Retroalimentación general</h2>
+    <p>Estimada Lisbeth:</p>
+    <p>Tu trabajo es destacable y representa un enfoque avanzado en diseño orientado a objetos. Has estructurado el proyecto en múltiples capas con interfaces (<code>ILibroService</code>, <code>ILibroDAO</code>), clases de implementación (<code>LibroServiceImpl</code>, <code>CsvLibroDAO</code>), manejo de excepciones específicas (<code>LibroNoEncontradoException</code>, <code>LibroYaPrestadoException</code>, etc.), y una división clara entre lógica, presentación y persistencia.</p>
+
+    <p>El uso de excepciones está bien implementado. Se nota un dominio técnico al definir clases personalizadas y utilizarlas en flujos controlados con <code>try/catch</code>. Las excepciones no solo capturan errores técnicos, sino también lógicos y de validación del dominio, lo que denota comprensión profunda del objetivo de la actividad.</p>
+
+    <p>Se valora especialmente la integración de un DAO que utiliza CSV para almacenamiento y un servicio que orquesta el acceso a datos, lo que muestra buenas prácticas en separación de responsabilidades. El uso de constantes, validadores, logger, y menú controlado por consola entrega una experiencia profesional que excede los mínimos requeridos.</p>
+
+    <p>Como recomendación menor, podrías refactorizar algunos métodos que concentran demasiadas tareas, como aquellos que validan entrada, muestran menú y ejecutan acciones. Extraer métodos con nombres descriptivos mejoraría la legibilidad y mantenibilidad. También podrías documentar más los métodos clave y considerar manejar excepciones checked con mayor granularidad en la capa de persistencia.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Up – ¿Dónde debe llegar el estudiante?</h2>
+    <p>Esta actividad tiene por objetivo que los estudiantes construyan un sistema funcional capaz de controlar errores esperados de forma segura, usando excepciones personalizadas, bloques <code>try/catch</code> específicos y estructuras como <code>ArrayList</code> o archivos externos. Además, se espera que el sistema sea modular y fácil de extender.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Back – ¿Cómo se está desempeñando?</h2>
+    <p>Tu desempeño ha sido sobresaliente. Has estructurado el sistema en capas, separado interfaces de implementación, aplicado persistencia de datos con archivos, usado excepciones específicas, y generado un entorno de uso amigable en consola. Todo esto refleja una madurez técnica destacable y un cumplimiento completo de los objetivos de la actividad. Solo se sugiere modularizar aún más ciertos bloques y mejorar el detalle de validaciones.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Forward – ¿Cómo debe seguir?</h2>
+    <p>El siguiente paso recomendable es aplicar este mismo patrón de diseño orientado a objetos en otros dominios como gestión de clientes, reservas o inventario. Procura también construir un pequeño conjunto de pruebas o simulaciones automáticas para validar tus servicios sin depender de la consola. Finalmente, puedes transformar tus excepciones más comunes en jerarquías si detectas que se repiten patrones en su uso.</p>
+  </div>
+
+  <footer>
+    Instituto Profesional Duoc UC - Evaluación Formativa Semana 1 - Revisión: El profe jorge
+  </footer>
+
+</body>
+</html>

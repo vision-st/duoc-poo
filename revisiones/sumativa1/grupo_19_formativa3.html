@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación Formativa - Grupo 19</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e6f0fa;
+      color: #003865;
+      padding: 2em;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #003865;
+    }
+    .highlight {
+      background-color: #ffffff;
+      border-left: 5px solid #005baa;
+      padding: 1.5em;
+      margin-bottom: 2em;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+    }
+    footer {
+      margin-top: 3em;
+      text-align: center;
+      font-size: 0.85em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Evaluación Formativa - Semana 4</h1>
+  <h2>Actividad: Manejando excepciones Try/Catch</h2>
+  <h3>Estudiantes: Edgar Darío Espinoza Bragazzi y Camila Inal Tapia (Grupo 19)</h3>
+
+  <div class="highlight">
+    <h2>Retroalimentación general</h2>
+    <p>Estimados estudiantes:</p>
+    <p>En esta entrega han enviado únicamente el archivo <code>BibliotecaExcepciones.java</code>, el cual reúne la definición de múltiples clases de excepciones personalizadas. Si bien esto representa una fracción del total del sistema solicitado, se valora el esfuerzo por encapsular los errores esperables de un sistema bibliotecario en clases bien nombradas y semánticamente coherentes.</p>
+
+    <p>Las excepciones definidas, como <code>LibroNoDisponibleException</code>, <code>UsuarioNoRegistradoException</code> o <code>MaximoPrestamoAlcanzadoException</code>, reflejan un análisis adecuado del dominio y permiten suponer que el sistema mayor fue concebido con intenciones de modularidad y robustez. Se nota preocupación por anticiparse a fallas lógicas, lo cual es central en esta actividad.</p>
+
+    <p>No obstante, al no contar con el resto del sistema (controladores, modelos, menú, etc.), no es posible evaluar la implementación práctica de estas excepciones ni cómo se integran al flujo del programa. El uso de constructores vacíos y algunos con mensajes personalizados es correcto, aunque podría mejorarse añadiendo parámetros opcionales o sobrecargas que permitan más flexibilidad.</p>
+
+    <p>Recomendamos complementar esta entrega con al menos una clase de prueba o una simulación de su uso, para que pueda apreciarse la funcionalidad completa dentro del entorno de ejecución. Pese a lo anterior, esta porción específica del código cumple con uno de los requerimientos clave de la actividad: la definición de excepciones personalizadas alineadas al contexto.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Up – ¿Dónde debe llegar el estudiante?</h2>
+    <p>Esta actividad tiene como objetivo desarrollar una solución robusta que maneje excepciones de manera controlada y comprensible para el usuario. Se espera que las clases de error estén integradas dentro del flujo lógico de un sistema mayor y que permitan capturar condiciones como errores de préstamo, búsquedas fallidas y entradas inválidas de forma clara, sin romper el programa.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Back – ¿Cómo se está desempeñando?</h2>
+    <p>Han logrado capturar correctamente el espíritu de la actividad al definir un conjunto sólido de excepciones personalizadas, con nombres que reflejan posibles estados de error en un sistema bibliotecario. Sin embargo, la evaluación se ve limitada por la falta del sistema completo. No se puede observar cómo estas excepciones son utilizadas, ni si son lanzadas y capturadas en contexto real.</p>
+  </div>
+
+  <div class="highlight">
+    <h2>Feed Forward – ¿Cómo debe seguir?</h2>
+    <p>Para dar el siguiente paso, los animamos a completar el sistema o al menos construir un archivo <code>Main</code> o clase <code>Biblioteca</code> que utilice y dispare estas excepciones en casos concretos. Así podrán comprobar en la práctica su utilidad y controlar mejor la experiencia de usuario. Además, podrían reutilizar este conjunto de clases de excepción para otros sistemas como préstamos de herramientas, gestión de matrículas o reservas online.</p>
+  </div>
+
+  <footer>
+    Instituto Profesional Duoc UC - Evaluación Formativa Semana 1 - Revisión: El profe jorge
+  </footer>
+
+</body>
+</html>

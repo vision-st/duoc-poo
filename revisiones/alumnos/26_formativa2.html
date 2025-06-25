@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Evaluación Formativa - Grupo 26</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f0fa;
+            margin: 40px;
+            color: #003865;
+        }
+        h1, h2 {
+            color: #005baa;
+        }
+        .encabezado {
+            background-color: #003865;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .retroalimentacion {
+            background-color: #e6f0fa;
+            border-left: 5px solid #005baa;
+            padding: 15px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        table, th, td {
+            border: 1px solid #003865;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #005baa;
+            color: white;
+        }
+        .footer {
+            text-align: center;
+            font-style: italic;
+            margin-top: 50px;
+            color: #003865;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="encabezado">
+        <h1>Evaluación Formativa</h1>
+        <p><strong>Actividad:</strong> Actividad Formativa 2: Utilizando Herencia y Polimorfismo</p>
+        <p><strong>Estudiantes:</strong> IGNACIO JAVIER CONTRERAS LOBOS y JUAN CARLOS CASTILLO CASTILLO TORRES</p>
+        <p><strong>Grupo:</strong> 26</p>
+    </div>
+
+    <div class="retroalimentacion">
+        <h2>Retroalimentación General</h2>
+        <p>¡Buen trabajo equipo! Se nota una intención clara de aplicar los pilares del paradigma orientado a objetos. El uso de herencia, clases abstractas, e interfaces está presente. La clase `CuentaBancaria` cumple un buen rol como clase base abstracta y fue correctamente sobrescrita por subclases como `CuentaAhorro`, `CuentaCorriente` y `CuentaCredito`, que implementan comportamientos específicos.</p>
+        <p>El uso de la interfaz `MostrarDatosCliente` se integra correctamente y refuerza el principio de programación por contrato. La estructura del código es clara, y las clases están organizadas correctamente. Como sugerencia, podrían mejorar el control de excepciones, especialmente en el manejo de entrada por consola, y separar mejor las responsabilidades del sistema. ¡Sigan así!</p>
+    </div>
+
+    <h2>Evaluación por Criterios</h2>
+    <table>
+        <tr>
+            <th>Criterios</th>
+            <th>CL</th><th>L</th><th>ML</th><th>LI</th><th>NL</th>
+            <th>Observaciones</th>
+        </tr>
+        <tr>
+            <td>1. Clase abstracta con al menos dos atributos</td>
+            <td>X</td><td></td><td></td><td></td><td></td>
+            <td>`CuentaBancaria` tiene atributos relevantes (`numeroCuenta`, `saldo`) y cumple adecuadamente su rol base.</td>
+        </tr>
+        <tr>
+            <td>2. Tres subclases con implementación específica</td>
+            <td>X</td><td></td><td></td><td></td><td></td>
+            <td>Se implementan correctamente `CuentaAhorro`, `CuentaCorriente`, `CuentaCredito` con comportamientos propios.</td>
+        </tr>
+        <tr>
+            <td>3. Aplica interfaz con método</td>
+            <td>X</td><td></td><td></td><td></td><td></td>
+            <td>La interfaz `MostrarDatosCliente` define un contrato claro que se cumple en clases relevantes.</td>
+        </tr>
+        <tr>
+            <td>4. Sobreescribe método abstracto</td>
+            <td>X</td><td></td><td></td><td></td><td></td>
+            <td>Se sobrescriben métodos como `consultarSaldo()` o `mostrarInformacion()` con lógica válida.</td>
+        </tr>
+        <tr>
+            <td>5. Sobrecarga de métodos en clase abstracta</td>
+            <td>X</td><td></td><td></td><td></td><td></td>
+            <td>Se observa la sobrecarga de constructores en `CuentaBancaria`, cumpliendo el criterio sin errores.</td>
+        </tr>
+    </table>
+
+    <h2>Retroalimentación Específica</h2>
+    <h3>Feed Up – ¿Dónde debe llegar el estudiante?</h3>
+    <p>Esta actividad busca consolidar los principios fundamentales de la herencia, el polimorfismo y la programación basada en interfaces. El objetivo es construir un sistema que modele cuentas bancarias usando clases abstractas, subclases concretas, y contratos definidos por interfaces.</p>
+
+    <h3>Feed Back – ¿Cómo se está desempeñando?</h3>
+    <p>Logran integrar todos los elementos requeridos de manera sólida. El código es funcional y presenta una estructura clara. Las clases y métodos fueron definidos con sentido práctico y coherente. La lógica de la consola es simple pero efectiva, aunque hay oportunidades para modular más.</p>
+
+    <h3>Feed Forward – ¿Cómo debe seguir?</h3>
+    <p>Un siguiente paso sería aplicar esta misma estructura orientada a objetos en un sistema de otro dominio, como una biblioteca, zoológico o flota de vehículos. Además, sería recomendable comenzar a separar mejor las responsabilidades (por ejemplo, lógica de negocio vs entrada de usuario), para dar los primeros pasos hacia una arquitectura MVC.</p>
+
+    <div class="footer">
+        Instituto Profesional Duoc UC - Evaluación Formativa Semana 2 - Revisión: El profe jorge
+    </div>
+</body>
+</html>

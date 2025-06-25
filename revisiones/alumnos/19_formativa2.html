@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Evaluación Formativa - Grupo 19</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6f0fa;
+      color: #003865;
+      margin: 40px;
+    }
+    header {
+      text-align: center;
+    }
+    h1, h2, h3 {
+      color: #005baa;
+    }
+    .destacado {
+      background-color: #dbe9f5;
+      border-left: 6px solid #005baa;
+      padding: 15px;
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+    th, td {
+      border: 1px solid #005baa;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #005baa;
+      color: white;
+    }
+    .retroalimentacion h3 {
+      color: #005baa;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Evaluación Formativa - Semana 2</h1>
+    <h2>Actividad: Utilizando Herencia y Polimorfismo</h2>
+    <h3>Grupo 19 - EDGAR DARIO ESPINOZA BRAGAZZI y CAMILA INAL TAPIA</h3>
+  </header>
+
+  <div class="destacado">
+    El proyecto desarrollado por el grupo cumple de forma adecuada con los objetivos propuestos para esta actividad. Se destaca el diseño centrado en la clase abstracta <code>CuentaBancaria</code>, que define atributos esenciales como número de cuenta y saldo, bien encapsulados y utilizados por sus subclases.<br><br>
+    Las subclases <code>CuentaAhorro</code>, <code>CuentaCorriente</code> y <code>CuentaCredito</code> están implementadas de forma coherente, sobrescribiendo métodos clave como <code>retirar</code> o <code>mostrarInformacion</code>, permitiendo así comportamientos diferenciados según el tipo de cuenta. Se observa también la correcta implementación de la interfaz <code>IMostrarDatos</code> para estandarizar la visualización de información, lo cual fortalece el uso del polimorfismo.<br><br>
+    El uso de sobrecarga se aprecia en la clase abstracta, permitiendo instanciaciones flexibles. La lógica del <code>Main</code> es clara, aunque podría beneficiarse de una mayor separación entre la lógica de negocio y la interfaz de usuario. Buen trabajo, con estilo ordenado y aplicando correctamente los conceptos.
+  </div>
+
+  <table>
+    <tr>
+      <th>Criterios</th><th>CL</th><th>L</th><th>ML</th><th>LI</th><th>NL</th><th>Observaciones</th>
+    </tr>
+    <tr>
+      <td>1. Clase abstracta con al menos dos atributos</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td><code>CuentaBancaria</code> posee los atributos requeridos y define estructura común para las cuentas hijas.</td>
+    </tr>
+    <tr>
+      <td>2. Tres subclases con implementaciones específicas</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td>Cada subclase implementa lógicas distintas en métodos como <code>retirar()</code>, adaptándose a reglas de su tipo.</td>
+    </tr>
+    <tr>
+      <td>3. Aplica una interfaz que define un método</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td><code>IMostrarDatos</code> permite estandarizar la salida de datos. Bien utilizada en <code>Cliente</code> y en <code>Cuenta</code>.</td>
+    </tr>
+    <tr>
+      <td>4. Realiza la sobreescritura de la clase abstracta</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td>Los métodos definidos en la clase base se sobrescriben adecuadamente en las subclases.</td>
+    </tr>
+    <tr>
+      <td>5. Aplica sobrecarga de métodos en la clase abstracta</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td>Se observa sobrecarga de constructores que permite flexibilidad al momento de instanciar cuentas.</td>
+    </tr>
+  </table>
+
+  <div class="retroalimentacion">
+    <h3>Feed Up</h3>
+    <p>La meta es implementar un sistema de cuentas bancarias utilizando herencia, interfaces, sobreescritura y sobrecarga, permitiendo estructuras flexibles y reutilizables que simulen comportamientos reales.</p>
+
+    <h3>Feed Back</h3>
+    <p>El grupo logró aplicar correctamente todos los puntos. Las clases están bien organizadas, la jerarquía de herencia es clara y el sistema es funcional. El código es legible y con buena cohesión.</p>
+
+    <h3>Feed Forward</h3>
+    <p>Como mejora futura, podrían aplicar separación de responsabilidades creando clases dedicadas a la lógica de negocio y otras a la interfaz de usuario. También se recomienda explorar el uso de colecciones más avanzadas o menús dinámicos para mejorar la experiencia de usuario.</p>
+  </div>
+
+  <footer>
+    Instituto Profesional Duoc UC - Evaluación Formativa Semana 2 - Revisión: El profe jorge
+  </footer>
+</body>
+</html>

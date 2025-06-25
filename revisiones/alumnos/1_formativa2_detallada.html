@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Evaluación Formativa - Grupo 1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6f0fa;
+      color: #003865;
+      margin: 40px;
+    }
+    header {
+      text-align: center;
+    }
+    h1, h2, h3 {
+      color: #005baa;
+    }
+    .destacado {
+      background-color: #dbe9f5;
+      border-left: 6px solid #005baa;
+      padding: 15px;
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+    th, td {
+      border: 1px solid #005baa;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #005baa;
+      color: white;
+    }
+    .retroalimentacion h3 {
+      color: #005baa;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Evaluación Formativa - Semana 2</h1>
+    <h2>Actividad: Utilizando Herencia y Polimorfismo</h2>
+    <h3>Grupo 1 - JORGE GERMAN GALLARDO HECK y PEDRO ANDRES BREIT LIRA</h3>
+  </header>
+
+  <div class="destacado">
+    El código entregado por el grupo evidencia un esfuerzo importante por cubrir todos los aspectos solicitados. Se observa una estructura clara en la jerarquía de clases, la separación de responsabilidades está bien definida y los métodos aplicados demuestran comprensión del concepto de polimorfismo. <br><br>
+    La clase abstracta <code>Cuenta</code> fue bien diseñada, con atributos encapsulados y métodos sobrescritos correctamente. Las subclases <code>CuentaAhorro</code>, <code>CuentaCorriente</code> y <code>CuentaCredito</code> implementan comportamientos diferenciados, lo cual refuerza el principio de herencia.<br><br>
+    El uso de <code>HashMap</code> para registrar cuentas según tipo y rut es funcional, aunque podría mejorarse con una clase envolvente que gestione las cuentas. Asimismo, se repite bastante lógica en los menús, lo que podría optimizarse aplicando funciones auxiliares o estructuras de control más limpias. El código es robusto, pero algo extenso y puede beneficiarse de modularización. <br><br>
+    Finalmente, la interfaz <code>InformacionProducto</code> se implementa de forma adecuada para representar operaciones comunes. ¡Buen trabajo!
+  </div>
+
+  <table>
+    <tr>
+      <th>Criterios</th><th>CL</th><th>L</th><th>ML</th><th>LI</th><th>NL</th><th>Observaciones</th>
+    </tr>
+    <tr>
+      <td>1. Clase abstracta con al menos dos atributos</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td>La clase abstracta <code>Cuenta</code> contiene correctamente los atributos <code>numeroCuenta</code> y <code>saldoCuenta</code>, encapsulados y bien usados.</td>
+    </tr>
+    <tr>
+      <td>2. Tres subclases con implementaciones específicas</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td>Cada tipo de cuenta extiende <code>Cuenta</code> y redefine comportamientos propios, como reglas de giro o crédito, cumpliendo adecuadamente el requerimiento.</td>
+    </tr>
+    <tr>
+      <td>3. Aplica una interfaz que define un método</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td>La interfaz <code>InformacionProducto</code> es aplicada por todas las cuentas y se implementa correctamente el método <code>informacionTransacciones</code>.</td>
+    </tr>
+    <tr>
+      <td>4. Sobreescritura del método abstracto</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td>El método abstracto <code>estadoCuenta()</code> se sobrescribe en cada subclase, cumpliendo el principio de polimorfismo.</td>
+    </tr>
+    <tr>
+      <td>5. Sobrecarga de métodos (constructores)</td>
+      <td></td><td>X</td><td></td><td></td><td></td>
+      <td>Solo se define un constructor por clase. Para una sobrecarga completa, podrían implementar otra versión como:<br><code>public Cuenta(long numeroCuenta) { this(numeroCuenta, 0); }</code></td>
+    </tr>
+  </table>
+
+  <div class="retroalimentacion">
+    <h3>Feed Up</h3>
+    <p>El objetivo de esta actividad es diseñar estructuras orientadas a objetos utilizando herencia, polimorfismo, interfaces y clases abstractas para representar un sistema bancario simple pero funcional. Se espera comprender cómo definir jerarquías lógicas, reusar código y aplicar buenas prácticas.</p>
+
+    <h3>Feed Back</h3>
+    <p>El proyecto cumple con los requerimientos esenciales. El código demuestra un dominio adecuado de los conceptos de POO. Las clases están bien organizadas, aunque se recomienda evitar la repetición excesiva en los menús. También se puede mejorar la sobrecarga de constructores y reutilizar lógica común.</p>
+
+    <h3>Feed Forward</h3>
+    <p>Para seguir mejorando, les sugiero que repliquen esta lógica en otro dominio, como un sistema de reservas o una librería. También pueden refactorizar el código para eliminar duplicación, aplicar métodos auxiliares y mantener el código más legible. Les recomiendo explorar el libro "El Programador Pragmático" para desarrollar hábitos sólidos desde ahora.</p>
+  </div>
+
+  <footer>
+    Instituto Profesional Duoc UC - Evaluación Formativa Semana 2 - Revisión: El profe jorge
+  </footer>
+</body>
+</html>

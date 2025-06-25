@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Evaluación Formativa - Grupo 16</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6f0fa;
+      color: #003865;
+      margin: 40px;
+    }
+    header {
+      text-align: center;
+    }
+    h1, h2, h3 {
+      color: #005baa;
+    }
+    .destacado {
+      background-color: #dbe9f5;
+      border-left: 6px solid #005baa;
+      padding: 15px;
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+    th, td {
+      border: 1px solid #005baa;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #005baa;
+      color: white;
+    }
+    .retroalimentacion h3 {
+      color: #005baa;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Evaluación Formativa - Semana 2</h1>
+    <h2>Actividad: Utilizando Herencia y Polimorfismo</h2>
+    <h3>Grupo 16 - MIGUEL ANGEL OMAR VARGAS HUENUL</h3>
+  </header>
+
+  <div class="destacado">
+    El código presentado muestra una propuesta ambiciosa y detallada, con una clara intención de modelar un sistema más completo, incorporando persistencia, separación en capas y manejo de múltiples responsabilidades. Se nota el esfuerzo por organizar los componentes: se utilizan varias clases auxiliares como <code>Auxiliares</code>, <code>ServiciosCliente</code> y <code>PersistenciaInfo</code>, lo que da indicios de un pensamiento modular.<br><br>
+    La clase abstracta <code>CuentaBancaria</code> está correctamente estructurada, e incluye atributos representativos, métodos concretos y una firma abstracta para su sobrescritura. Las subclases especializadas como <code>CuentaCorriente</code>, <code>CuentaAhorro</code> y <code>CuentaVista</code> están bien diferenciadas en su lógica.<br><br>
+    La sobrecarga de constructores se encuentra aplicada adecuadamente, lo que permite versatilidad en la creación de cuentas. Se valora el uso de una interfaz de persistencia, aunque su vínculo directo con la evaluación es indirecto. La estructura del código permite crecer fácilmente en futuras versiones. Muy buen trabajo, con proyección profesional.
+  </div>
+
+  <table>
+    <tr>
+      <th>Criterios</th><th>CL</th><th>L</th><th>ML</th><th>LI</th><th>NL</th><th>Observaciones</th>
+    </tr>
+    <tr>
+      <td>1. Clase abstracta con al menos dos atributos</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td><code>CuentaBancaria</code> tiene una estructura clara, con atributos encapsulados y lógica reutilizable. Correcto.</td>
+    </tr>
+    <tr>
+      <td>2. Tres subclases con implementaciones específicas</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td>Las clases <code>CuentaCorriente</code>, <code>CuentaAhorro</code> y <code>CuentaVista</code> sobrescriben y extienden comportamientos de forma coherente.</td>
+    </tr>
+    <tr>
+      <td>3. Aplica una interfaz que define un método</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td>Se utiliza una interfaz relacionada con persistencia y visualización de información. Aunque no es estrictamente una interfaz bancaria, cumple el requerimiento.</td>
+    </tr>
+    <tr>
+      <td>4. Sobreescritura del método abstracto</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td>Se sobrescribe correctamente el método abstracto en las subclases, cumpliendo el principio de polimorfismo.</td>
+    </tr>
+    <tr>
+      <td>5. Sobrecarga de métodos (constructores)</td>
+      <td>X</td><td></td><td></td><td></td><td></td>
+      <td>La clase abstracta incluye varios constructores, cumpliendo el principio de sobrecarga con diferentes escenarios de inicialización.</td>
+    </tr>
+  </table>
+
+  <div class="retroalimentacion">
+    <h3>Feed Up</h3>
+    <p>El objetivo es aplicar conceptos de POO como herencia, abstracción, polimorfismo, interfaces, sobreescritura y sobrecarga para representar un modelo funcional, limpio y extensible, enfocado en cuentas bancarias.</p>
+
+    <h3>Feed Back</h3>
+    <p>El estudiante ha presentado un código estructurado, modular, con separación de responsabilidades y buen uso de los conceptos. La lógica de cuenta y cliente está clara, aunque se podrían mejorar los mensajes para el usuario en consola.</p>
+
+    <h3>Feed Forward</h3>
+    <p>Te invito a seguir explorando el mismo diseño aplicado a otros dominios como una biblioteca, sistema de préstamos o reservas. Considera además la posibilidad de agregar pruebas simples y continuar aplicando buenas prácticas como separar lógica de presentación y dominio.</p>
+  </div>
+
+  <footer>
+    Instituto Profesional Duoc UC - Evaluación Formativa Semana 2 - Revisión: El profe jorge
+  </footer>
+</body>
+</html>
