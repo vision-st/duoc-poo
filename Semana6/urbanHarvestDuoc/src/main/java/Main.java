@@ -51,11 +51,11 @@ public class Main {
                     System.out.println("Actividad agregado exitosamente");
                     break;
                 case "5":
-                    ArchivoService.guardarUsuarios(usuarioService.getUsuarios(), "data/usuarios.txt");
+                    ArchivoService.guardarUsuarios(usuarioService.getUsuarios(), "usuarios.txt");
                     System.out.println("Usuarios guardado exitosamente");
                     break;
                 case "6":
-                    ArchivoService.guardarActividades(actividad, "data/actividades.txt");
+                    ArchivoService.guardarActividades(actividad, "actividades.txt");
                     System.out.println("Actividades guardadas.");
                     break;
                 case "0":
